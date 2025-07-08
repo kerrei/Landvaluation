@@ -1,0 +1,8 @@
+services:
+  landvaluation:
+    image: landvaluation
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5002:5002
