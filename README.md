@@ -1,33 +1,66 @@
-#Land Price Valuation Platform 🌍🏡
+#🏞 Land Valuation Platform
 
-This is a digital land/property valuation platform designed to estimate land prices based on user-input locations within Kenya. The goal is to offer data-driven insights to buyers, investors, real estate agents, and developers by using recent sales, geographic data, and infrastructure proximity to provide real-time value estimates.
+A full-stack platform for predicting land prices in Kenya using geospatial data and machine learning.
 
-#🔧 Technologies Used
-	•	Frontend: React.js or HTML/CSS with Bootstrap (for MVP)
-	•	Backend: Python (Flask or FastAPI)
-	•	Database: PostgreSQL (with PostGIS for spatial data support)
-	•	Machine Learning: Scikit-learn, Pandas, XGBoost (for price prediction)
-	•	APIs: Google Maps API, Kenya Land Registry (if available)
-	•	Deployment: Docker, Render / Heroku / AWS
+---
 
-📁 Project Structure
+## 📦 Tech Stack
+
+- *Backend*: Python + Flask  
+- *Machine Learning*: Pandas, Scikit-learn  
+- *Database*: PostgreSQL + PostGIS  
+- *Frontend*: HTML, JavaScript  
+- *Deployment*: Docker + Docker Compose  
+
+---
+
+## 📁 Project Structure
 
 land-valuation-platform/
-├── backend/
-│   ├── app.py
-│   ├── models/
-│   └── routes/
-├── frontend/
-│   └── index.html / React App
-├── data/
-│   └── raw_data.csv
-├── ML/
-│   └── model.pkl
-├── requirements.txt
-├── README.md
-└── .env
+├── backend/              # Flask API
+├── ML/                   # Model training and predictions
+├── frontend/             # UI files
+├── database/             # SQL scripts, sample data
+├── Dockerfile            # App container
+├── docker-compose.yml    # Service definitions
+├── .env                  # Environment variables (ignored)
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
 
-📌 Features
-	•	Land price predictions by location
-	•	Interactive map interface
-	•	Historical price trends and analytics
+---
+
+## ⚙ Setup Instructions
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/kerrei/Landvaluation.git
+cd Landvaluation
+
+2. Add .env file
+
+DB_HOST=db
+DB_PORT=5432
+DB_NAME=land_valuation
+DB_USER=admin
+DB_PASS=password
+FLASK_APP=backend/app.py
+FLASK_RUN_HOST=0.0.0.0
+FLASK_RUN_PORT=5000
+
+3. Run with Docker
+
+docker-compose up --build
+
+
+⸻
+
+🚀 Usage
+	•	Send POST requests to /predict with coordinates
+	•	Visualize or edit data via frontend or DBeaver/pgAdmin
+	•	Train or retrain ML model in ML/
+
+⸻
+
+👤 Author
+
+Kerre – github.com/kerrei
