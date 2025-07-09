@@ -2,7 +2,8 @@
 # 🏞 Land Valuation Platform
 
 A full-stack platform for determining land prices in Kenya using geospatial data and machine learning.
-
+Kenya lacks any digital infrastructure by the government to accurately determine the price of land. That's why I created #'Arthi Kenya'#
+This platf will work with banks, governments and individual businesses to make accurate price determination.
 ---
 
 ## 📦 Tech Stack
