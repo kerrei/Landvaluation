@@ -1,7 +1,7 @@
 
 # 🏞 Land Valuation Platform
 
-A full-stack platform for predicting land prices in Kenya using geospatial data and machine learning.
+A full-stack platform for determining land prices in Kenya using geospatial data and machine learning.
 
 ---
 
