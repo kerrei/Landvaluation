@@ -1,0 +1,39 @@
+
+flask
+gunicorn
+psycopg2-binary
+python-dotenv
+pandas
+numpy
+scikit-learn
+xgboost
+matplotlib
+joblib
+osmnx
+geopandas
+shapely
+googlemaps
+textblob
+vaderSentiment
+requests
+seaborn
+streamlit
+openai
+torch
+torchvision
+torchaudio
+tensorflow
+keras
+beautifulsoup4
+scrapy
+selenium
+
+# For React frontend (Node.js, add these to package.json):
+# react
+# react-dom
+# react-scripts
+# axios
+# @mui/material
+# @emotion/react
+# @emotion/styled
+# dotenv
